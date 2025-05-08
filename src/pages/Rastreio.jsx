@@ -8,7 +8,7 @@ import funcionario from '../assets/funcionario.png';
 import fundo1 from '../assets/fundo1.png'
 import fundo2 from '../assets/fundo2.png'
 import fundo from '../assets/fundo.png'
-
+import docampo from '../assets/docampo.png'
 export default function Rastreio() {
   const [lote, setLote] = useState("");
   const [dados, setDados] = useState(null);
@@ -39,14 +39,15 @@ export default function Rastreio() {
     </header>
     <div className={styles.corpo}>
       <div className={styles.buscar}>
-      <h2 className="text-xl font-bold">Do Campo Para Você</h2>
+      <img src={docampo} alt="Do Campo Para Você" className={styles.imgDoCampo} />
+      {/*<h2 className="text-xl font-bold">Do Campo Para Você</h2>
       <p>Digite o número do Lote de Fabricação</p>
-      <p>Para saber mais sobre a origem Sustentável do seu produto</p>
+      <p>Para saber mais sobre a origem Sustentável do seu produto</p>*/}
 
       <container className={styles.buscarEClicar}>
         <input
           type="text"
-          placeholder="Digite o número do lote final"
+          placeholder="Digite o Número do Lote da Embalagem"
           value={lote}
           onChange={(e) => setLote(e.target.value)}
           className="p-2 border rounded"
@@ -73,10 +74,12 @@ export default function Rastreio() {
 
       {dados && (
         <div className={styles.infoContainer}>
-          <h3 >Informações Sobre o Produto</h3>
+          <h3 ><strong>Informações Sobre o Produto</strong></h3>
+          <h3><strong>Seu Produto:</strong> {dados.numeroLoteProdutoFinal}</h3>
           <h4>Sobre a Unidade Industrial</h4>
           <p><strong>Onde Armazenamos:</strong> {dados.nomeFilial}</p>
           <p><strong>Data de Processamento:</strong> {new Date(dados.dataProcessamento).toLocaleDateString('pt-BR')}</p>
+          <p><strong>Numero Lote Agraria:</strong> {dados.numeroLoteFilial}</p>
           <h4>Sobre a Fazenda</h4>
           <p><strong>Qual Fazenda Plantou:</strong> {dados.nomeFazenda}</p>
           <p><strong>Onde a Fazenda Fica:</strong> {dados.localizacao}</p>
