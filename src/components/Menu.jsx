@@ -12,6 +12,6 @@ const Menu = () => (
       <Link to="/rastreio">rastrear</Link>
     </nav>
   </header>
-);
+); 
 
 export default Menu;
