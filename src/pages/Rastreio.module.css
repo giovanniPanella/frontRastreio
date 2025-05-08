@@ -209,6 +209,13 @@
     .containerImg {
       flex-direction: column;
       align-items: center;
+      width: 90%;
+      height: auto;
+
+    }
+    .containerImg img {
+      display: none;
+
     }
   
     .sobreComImagem img {
@@ -241,6 +248,9 @@
         flex-direction: column;
         align-items: center;
         width: 100%;
+      }
+      .buscarEClicar input{
+        height: 2.5rem;
       }
       
       .buscar input, .buscar button {
