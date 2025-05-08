@@ -10,7 +10,7 @@ function App() {
       <Routes>
         <Route path="/rastreio" element={<Rastreio />} />
         <Route
-          path="/*"
+          path="/"
           element={
             <>
               <Menu />
