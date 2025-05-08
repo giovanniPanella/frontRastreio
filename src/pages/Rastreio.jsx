@@ -47,7 +47,7 @@ export default function Rastreio() {
       <container className={styles.buscarEClicar}>
         <input
           type="text"
-          placeholder="Digite o Número do Lote da Embalagem"
+          placeholder="Digite o Nº do Lote da Embalagem"
           value={lote}
           onChange={(e) => setLote(e.target.value)}
           className="p-2 border rounded"
