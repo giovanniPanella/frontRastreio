@@ -1,0 +1,29 @@
+.header{
+    background-color:#FFFFFF ;
+    display: flex;
+    padding: 1.25rem 0;
+    height: 80px;
+    gap: 1rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.header span{
+    font-size: 1.5rem;/*converter px em rem pega pixel/16 ex 24px 24/16= 1,5rem */
+    font-weight: bold;
+}
+.header img{
+    width: 10rem;
+}
+.header a{
+    padding: 1.5rem;
+    align-items: center;
+    margin-right: '1rem';
+    padding: '2rem';
+    text-decoration: none;
+    color: #16a34a; /* verde */
+}
+
+.header a:hover {
+    color: #166534; /* verde mais escuro */
+  }
