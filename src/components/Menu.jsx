@@ -9,9 +9,8 @@ const Menu = () => (
     <nav style={ styles.nave }>
       <Link to="/cadastro" >Cadastrar Fazenda</Link>
       <Link to="/inserir-lote">Inserir Lote Final</Link>
-      <Link to="/rastreio">rastrear</Link>
     </nav>
   </header>
-); 
+);
 
 export default Menu;

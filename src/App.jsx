@@ -8,19 +8,9 @@ function App() {
   return (
     <Router>
       <Routes>
-        <Route path="/rastreio" element={<Rastreio />} />
-        <Route
-          path="/"
-          element={
-            <>
-              <Menu />
-              <Routes>
-                <Route path="/cadastro" element={<Cadastro />} />
-                <Route path="/inserir-lote" element={<InserirLote />} />
-              </Routes>
-            </>
-          }
-        />
+      <Route path="/rastreio" element={<Rastreio />} />
+        <Route path="/" element={<Rastreio />} />
+    
       </Routes>
     </Router>
   );
